@@ -17,7 +17,7 @@
   * master 分支的任何一个 commit，符合质量要求。
   * 统一从 master 拉取新分支 。  
 
-![](images/branch_model.jpg)
+![](data:images/branch_model.jpg)
   
 ## 单个特性分支怎么合入到 master 分支？
 
@@ -31,7 +31,8 @@
 
 ## 靠什么快速发现多特性分支集成的问题？
 
-![](images/WhatIsSmartMerge.jpg)
+![](data:images/WhatIsSmartMerge.jpg)
+
 
 ## Smart Merge 功能及特点
 
@@ -51,7 +52,7 @@
 
 ## 多特性分支上线流程（推荐）
 
-![](images/SmartMergeFlow.jpg)
+![](data:images/SmartMergeFlow.jpg)
 说明：
 1. F01、F02和F03 三个功能，每个功能对应一个特性分支，并行开发。
 2. 三个特性分支的开发人员通过自测后，各自发起了合入到 master 的 merge request。此时，团队可以做code review，sonar静态扫描等检查活动。
@@ -59,10 +60,10 @@
 4. 最后，F01master 及 F03master 的两个 Merge Request 被接纳，而 F02master的 Merge Request 被拒绝。
 
 上面步骤3在确定哪些特性分支可以一起上线的过程中，就可以借助Smart Merge。代码平台上Smart Merge设置如下图：
-![](images/SmartMergeConf.jpg)
+![](data:images/SmartMergeConf.jpg)
 
 如果自动集成时代码发生冲突，则web上会提示冲突，也会Email通知给相关人员。如F01和F02分支修改了同文件的同一行，Smart Merge自动merge后web提示信息如下图：
-![](images/conflict.jpg)
+![](data:images/conflict.jpg)
 
 ## 结束语
     
