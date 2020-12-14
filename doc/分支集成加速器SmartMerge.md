@@ -18,7 +18,7 @@
   * 统一从 master 拉取新分支 。  
 
 ![](data:images/branch_model.jpg)
-  
+![avatar](images/branch_model.jpg)  
 ## 单个特性分支怎么合入到 master 分支？
 
 为了保证集成分支的质量，在 gitlab 上集成分支通常都被保护起来（protected），不允许直接 push 到被保护的分支。不过，我们可以通过发起 Merge Request 的方式把特性分支合入到集成分支 。借助 Merge Request，我们可以完成 sonar 静态检查、代码 review 等质量管理的活动。
